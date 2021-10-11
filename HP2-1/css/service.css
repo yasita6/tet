@@ -1,0 +1,89 @@
+/*header*/
+header .drawer {
+  visibility: hidden;
+}
+/*top*/
+.top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 785px;
+  background: url(../img/remi-jacquaint.jpg)
+    center/cover;
+  clip-path: polygon(100% 3%, 0% 100%, 100% 100%);
+  z-index: -1;
+}
+
+.top {
+  width: 100%;
+  height: 500px;
+}
+
+.top img {
+  width: 38%;
+  margin: 72px -100px;
+}
+.service_ttl strong {
+  display: flex;
+  margin: -29% 390px;
+  font-size: 80px;
+  color: darkslategrey;;
+}
+/*html*/
+.service {
+ 
+  margin-top: 38%;
+}
+.service .section_ttl {
+  font-size: 82px;
+  color: darkgreen;
+}
+.service .intro_txt {
+  font-size: 20px;
+}
+.service_all {
+  position: relative;
+}
+
+.service_all::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 198vh;
+  top: 85px;
+  z-index: -1;
+  background: url(../img/coin.jpg);
+  background-repeat: repeat;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.3;
+}
+
+.service_list {
+  justify-content: space-between;
+  padding: 62px 134px 35px 130px;
+}
+
+.service_item {
+  height:60vh;
+  width: 100%;
+  margin-top: 50px;
+  content: "";
+  z-index: -1;
+  background-color: rgba(238, 238, 238, 0.378);
+  box-shadow: 12px 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.service_ttl {
+  padding-top: 55px;
+  padding-left: 22px;
+  font-size: 22px;
+}
+.service_sub {
+  padding: 25px 0 0 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.dervice_txt_sub {
+  padding-top: 50px;
+}

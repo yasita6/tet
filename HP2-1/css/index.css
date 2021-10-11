@@ -1,0 +1,227 @@
+/*header*/
+.header_all {
+  width: 100%;
+  display: inline-block;
+  background-color: #0080885e;
+  clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 5% 100%);
+  z-index: -2;
+}
+header .logo {
+  position: absolute;
+}
+header .journeyのコピー.img {
+  width: 100px;
+  height: auto;
+}
+header .logo img {
+  width: 95px;
+  height: auto;
+}
+
+header .navbar ul {
+  display: flex;
+  float: right;
+  position: relative;
+  margin: 15px 0;
+}
+
+
+header .navbar ul li:nth-child(1) {
+  border-right: none;
+}
+
+header .navbar ul li:last-child {
+  border-right: none;
+}
+
+header .navbar ul li a {
+  color: rgb(16, 14, 14);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+header .navbar ul li a:hover {
+  color: #75a9ff;
+}
+
+header .respons {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/*top*/
+
+header .drawer {
+  visibility: hidden;
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: url(../img/robert-lukeman-_RBcxo9AU-U-unsplash-1024x683.jpg)
+    center/cover;
+  clip-path: polygon(100% 3%, 0% 100%, 100% 100%);
+  z-index: -1;
+}
+
+.top {
+  width: 100%;
+  height: 500px;
+}
+
+.top img {
+  width: 50%;
+  margin: 20px 0;
+}
+/*service*/
+.service {
+  color: rgb(11, 82, 58);
+}
+.service_ttl  {
+  display: flex;
+  margin-top: 115px;
+  font-size: 100px;
+}
+.service_ttl  strong {
+  margin-top: 200px;
+}
+
+.service {
+  position: relative;
+  margin-bottom: 200px;
+}
+.service::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 630px;
+  top: 455px;
+  z-index: -1;
+  background: #75a9ff;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.3;
+}
+.service_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 62px 315px 35px 8px;
+}
+
+.service_item::before {
+  height: 50%;
+  width: 32%;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  background: url(../img/remi-jacquaint.jpg) center/cover no-repeat;
+  clip-path: polygon(100% 3%, 0% 100%, 100% 100%);
+}
+.service_sub_ttl {
+  padding-top: 55px;
+  padding-left: 22px;
+  font-size: 22px;
+}
+.service_sub_txt {
+  padding: 25px 0 0 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.btn a {
+  color: aliceblue;
+
+}
+.btn {
+  background-color: currentColor;
+  padding: 10px 20px;
+  block-size: 55px;
+  text-decoration: none;
+  transition: all .3s;
+  font-size: 38px;
+  text-align: center;
+}
+
+.btn:hover {
+  box-shadow: 07px 10px rgba(0,0,0,0.3);
+  border-color: transparent;
+}
+
+/*news*/
+
+.news {
+  color: rgb(11, 82, 58);
+}
+.section_ttl  {
+  display: flex;
+  margin-top: 25%;
+  font-size: 100px;
+}
+.section_ttl  strong {
+  margin-top: 200px;
+}
+
+.news_all {
+  position: relative;
+}
+
+.news_all::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: 85px;
+  z-index: -1;
+  background: url(../img/news.jpg);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.3;
+}
+
+.news_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 62px 134px 35px 130px;
+}
+
+.news_item {
+  height:60vh;
+  width: 32%;
+  margin-top: 50px;
+  content: "";
+  z-index: -1;
+  background-color: rgba(238, 238, 238, 0.378);
+  box-shadow: 12px 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.news_ttl {
+  padding-top: 55px;
+  padding-left: 22px;
+  font-size: 22px;
+  border-top: solid;
+}
+.news_sub {
+  padding: 25px 0 0 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.news_txt_sub {
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1024) {
+  header .navbar ul li {
+    padding-right: 71px;
+}
+}
+
+
+
+@media screen and (max-width: 768) {
+  header .navbar ul li {
+    padding-right: 60px;
+}
+}
