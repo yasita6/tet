@@ -1,11 +1,4 @@
 /*header*/
-.header_all {
-  width: 100%;
-  display: inline-block;
-  background-color: #0080885e;
-  clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 5% 100%);
-  z-index: -2;
-}
 header .logo {
   position: absolute;
 }
@@ -18,12 +11,6 @@ header .logo img {
   height: auto;
 }
 
-header .navbar ul {
-  display: flex;
-  float: right;
-  position: relative;
-  margin: 15px 0;
-}
 
 
 header .navbar ul li:nth-child(1) {
@@ -34,11 +21,11 @@ header .navbar ul li:last-child {
   border-right: none;
 }
 
-header .navbar ul li a {
+/*header .navbar ul li a {
   color: rgb(16, 14, 14);
   font-weight: 700;
   font-size: 25px;
-}
+}*/
 
 header .navbar ul li a:hover {
   color: #75a9ff;
@@ -51,9 +38,6 @@ header .respons {
 }
 /*top*/
 
-header .drawer {
-  visibility: hidden;
-}
 
 .top::before {
   content: "";
@@ -212,16 +196,117 @@ header .drawer {
   padding-top: 50px;
 }
 
-@media screen and (max-width: 1024) {
-  header .navbar ul li {
-    padding-right: 71px;
+@media screen and (max-width: 1024px) {
+  .top img {
+    width: 55%;
+    margin: 9%;
+   }   
+  .service_list {
+  padding: 62px 232px 52px 0px;
+}
+.news_list {
+  
+    padding: 0px 227px 17px 94px;
 }
 }
 
+@media screen and (max-width: 768px) {
+.top img {
+    width: 62%;
+    margin: 10%;
+}
+.service_ttl {
+    font-size: 61px;
+}
+.news_all::before {
+    height: 90%;
+}
+}
+@media screen and (max-width: 768px){
+.service_list {
+    padding: 62px 37px 27px 0px;
+}
+.service_item::before {
+    height: 41%;
+    width: 34%;
+    transition: all 0.3s ease-in-out 0s;
+    background: url(../img/remi-jacquaint.jpg) top /cover no-repeat;
+}
+.section_ttl strong {
+    font-size: 96px;
+}
+.news_list {
+    padding: 62px 18px 35px 20px;
+}
+}
 
+@media screen and (max-width: 480px) {
+  .top img {
+    margin: 95px 0;
+  }
+  img {
+    width: 50%;
+}
+.service_sub_txt {
+    padding: 0px 0 0 11px;
+    font-size: 5px;
+}
+.service_ttl {
+  font-size: 42px;
+}
 
-@media screen and (max-width: 768) {
-  header .navbar ul li {
-    padding-right: 60px;
+.service_sub_ttl {
+    padding-left: 17px;
+    font-size: 13px;
+}
+.service_list {
+    padding: 61px 77px 27px 0px;
+}
+.service::before {
+    height: 259px;
+    top: 411px;
+}
+.section_ttl strong {
+    font-size: 60px;
+}
+.news_sub {
+    font-size: 13px;
+}
+.news_all::before {
+    height: 90%;
+}
+}
+
+@media screen and (max-width: 375px) {
+.service_ttl {
+    font-size: 32px;
+}
+img {
+    width: 67%;
+}
+.service_item::before {
+    margin-left: -10%;
+    width: 43%;
+    height: 43%;
+    clip-path: polygon(100% 3%, 0% 159%, 100% 100%);
+}
+.section_ttl strong {
+    font-size: 40px;
+}
+.news_ttl {
+    font-size: 18px;  
+    padding-top: 0px;
+}
+.news_sub {
+    font-size: 11px;
+}
+.news_all::before {
+    height: 88%;
+}
+.news_sub {
+    padding: 0px 0 0 20px;
+}
+.news_txt_sub {
+    padding-top: 4px;
 }
 }

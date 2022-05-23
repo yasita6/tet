@@ -34,12 +34,6 @@
   color: darkgreen;
   text-align: center;
 }
-.section_ttl {
-    font-size: 50px;
-    background: url(../img/rogo.png);
-    background-repeat: repeat-x;
-    background-size: 80px;
-}   
 .news .intro_txt {
   font-size: 20px;
 }
@@ -59,4 +53,60 @@
 .text {
   font-size: 40px;
   
+}
+
+@media screen and (max-width: 1024px) {
+  .service_ttl strong {
+    font-size: 68px;
+}
+}
+@media screen and (max-width: 768px) {
+.top::before {
+    height: 57%;
+}
+.top img {
+    width: 38%;
+    margin: 3px -59px;
+}
+
+.service_ttl strong {
+    display: contents;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .top::before {
+    height: 38%;
+}
+.service_ttl strong {
+    font-size: 43px;
+    margin: 94px;
+}
+.top img {
+    width: 28%;
+    margin: 120px -29px;
+}
+.news .section_ttl {
+    font-size: 43px;
+}
+.news .inner {
+    height: 56%;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .top img {
+    width: 38%;
+    margin: 49px -106px;
+}
+.service_ttl {
+    padding-left: 158px;    
+}
+.text {
+    font-size: 30px;
+}
+.news {
+    margin-top: 0%;
+}
+
 }
